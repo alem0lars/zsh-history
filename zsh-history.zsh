@@ -61,13 +61,14 @@ setopt HIST_BEEP              # Beep when accessing non-existent history.
 
 # }}}
 
-zshaddhistory() {
-  if [ "$(echo "$1" | sed -re '/^$/d' | wc -l)" -gt 1 ]; then
-    print -sr -- "${1}"
-  else
-    return 1
-  fi
-}
+# TODO
+# zshaddhistory() {
+#   if [ "$(echo "$1" | sed -re '/^$/d' | wc -l)" -gt 1 ]; then
+#     print -sr -- "${1}"
+#   else
+#     return 1
+#   fi
+# }
 
 
 # vim: set filetype=zsh :
